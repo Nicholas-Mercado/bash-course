@@ -1,4 +1,13 @@
 #! /bin/bash
 
+# Author: Nicholas
+# Date Created: 06/22/23
+# Last Modified: 06/22/23
+
+# Description
+# Print the  text to screen
+
+# Usage
+# our_frist_script
 echo "this is my first script"
 exit 0
