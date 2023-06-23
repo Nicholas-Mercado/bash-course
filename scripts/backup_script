@@ -1,0 +1,14 @@
+#! /bin/bash
+
+# Author: Nicholas
+# Date Created: 06/22/23
+# Last Modified: 06/22/23
+
+# Description
+# Make backup of file
+
+# Usage
+tar -cvf ~/projects/bash_course/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
+
+exit 0
+
