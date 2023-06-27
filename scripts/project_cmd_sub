@@ -1,0 +1,13 @@
+#!/bin/bash
+
+backup_dir="/c/Users/nicho/projects/bash_course/backups"
+current_dir=$(pwd)
+
+#
+echo "Hello, ${USERNAME^}
+I will now back up your a directory, </path/to/home_directory>"
+
+echo "This is tar backing up stuff"
+
+
+echo "You are running this script from $current_dir. Therefore, I will save the backup in $backup_dir"
