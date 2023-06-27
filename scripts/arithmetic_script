@@ -7,3 +7,10 @@ echo "$x divided by $y is equal to" $(( x / y ))
 echo "$x minus $y is equal to" $(( x - y ))
 echo "$x tines $y is equal to" $(( x * y ))
 echo "$x tines $y is equal to" $(( x % y ))
+
+# How to use the bc comand
+
+
+awk 'BEGIN {printf "%.2f\n", (20.0+5)/7}'
+
+python -c "print((20+5)/7)"
