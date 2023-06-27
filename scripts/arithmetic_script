@@ -1,0 +1,8 @@
+#!/bin/bash
+
+x=100
+y=2
+echo "$x plus $y is equal to" $(( x + y ))
+echo "$x divided by $y is equal to" $(( x / y ))
+echo "$x minus $y is equal to" $(( x - y ))
+echo "$x tines $y is equal to" $(( x * y ))
