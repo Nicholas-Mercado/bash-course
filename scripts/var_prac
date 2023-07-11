@@ -3,5 +3,9 @@
 student="sarah"
 
 echo "hello ${student}"
+source ./our_first_script >> error.txt 
+echo "222222" >> error.txt
+# this error is on purpose
 
-exit 0
+
+

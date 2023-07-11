@@ -10,4 +10,3 @@
 # Usage
 # our_frist_script
 echo "this is my first script"
-exit 0
