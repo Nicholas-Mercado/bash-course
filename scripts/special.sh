@@ -4,4 +4,5 @@ IFS=/
 echo "$@"
 # word splitting
 echo $@
+# alter with IFS
 echo "$*"
