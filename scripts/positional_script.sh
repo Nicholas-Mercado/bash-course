@@ -6,4 +6,4 @@ echo "my favorite color is $3"
 echo "the 10th arg is  ${10}"
 echo "the 11th arg is  ${11}"
 
-echo $#
+echo "You inputed $# args"
