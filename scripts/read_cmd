@@ -1,4 +1,6 @@
 #!/bin/bash
-read -p "What is you name age and town: " name age town
+read -t 5 -p "What is you name: " name
+read -t 5 -p "What is you age: " age
+read -t 5 -p "What is you town: " town
 
 echo "My name is $name, my age is $age and I am from $town"
