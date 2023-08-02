@@ -1,7 +1,9 @@
 #!/bin/bash
 
 read -p "What is your first name?: " name
-read -p "What is your extension number?: " ext
-read -p "What access code would you like to use when dialing in?: " pin
+echo
+read -s -p "What is your extension number?(enter only 3 characters): " -N 3 ext
+echo
+read -s -p"What access code would you like to use when dialing in?: " -N 4 pin
 
-echo "$name $ext $pin"
+echo "$name,$ext,$pin" >> extensions.csv
