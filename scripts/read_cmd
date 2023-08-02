@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "What is you name age and town"
+read name age town
+
+echo "My name is $name, my age is $age and I am from $town"
