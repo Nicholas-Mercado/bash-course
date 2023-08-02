@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "What is your first name?: " name
+read -p "What is your extension number?: " ext
+read -p "What access code would you like to use when dialing in?: " pin
+
+echo "$name $ext $pin"
