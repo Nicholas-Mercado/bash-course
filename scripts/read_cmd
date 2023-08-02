@@ -1,5 +1,5 @@
 #!/bin/bash
-read -t 5 -p "What is you name: " name
+read -s -t 5 -p "What is you name: " name
 read -t 5 -p "What is you age: " age
 read -t 5 -p "What is you town: " town
 
