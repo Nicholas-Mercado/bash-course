@@ -2,8 +2,8 @@
 
 read -p "What is your first name?: " name
 echo
-read -s -p "What is your extension number?(enter only 3 characters): " -N 3 ext
+read -N 3 -p "What is your extension number?(enter only 3 characters): " ext
 echo
-read -s -p"What access code would you like to use when dialing in?: " -N 4 pin
+read -N 4 -s -p"What access code would you like to use when dialing in?: " pin
 
 echo "$name,$ext,$pin" >> extensions.csv
