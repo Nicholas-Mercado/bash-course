@@ -6,14 +6,15 @@ read -N 3 -p "What is your extension number?(enter only 3 characters): " ext
 echo
 read -N 4 -s -p"What access code would you like to use when dialing in?: " pin
 PS3="Would you like a Handset or Handheld phone?"
-select typeofphone in Headset Handheld;
-do
-break
+select typeofphone in Headset Handheld; do
+        echo "you chose $typeofphone"
+        break
 done
+
 PS3="What department are you in?"
-select derp in finance sales customner_service engineering;
-do
-break
+select derp in finance sales customner_service engineering; do
+        echo "you chose $derp"
+        break
 done
 
 echo "$name,$ext,$pin,$typeofphone,$derp" >> extensions.csv
