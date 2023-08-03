@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read -p "What is your first name?: " name
+echo
+read -N 3 -p "What is your extension number?(enter only 3 characters): " ext
+echo
+read -N 4 -s -p"What access code would you like to use when dialing in?: " pin
+PS3="Would you like a Handset or Handheld phone?"
+select typeofphone in Headset Handheld;
+do
+break
+done
+PS3="What department are you in?"
+select derp in finance sales customner_service engineering;
+do
+break
+done
+
+echo "$name,$ext,$pin,$typeofphone,$derp" >> extensions.csv
