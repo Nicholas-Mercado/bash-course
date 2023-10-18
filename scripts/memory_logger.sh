@@ -7,6 +7,8 @@ if [ -d "$DIR" ]; then
 else
         echo "$DIR Does not exists"
         echo "Creating directory now"
+        mkdir $DIR
+        echo "performance directory created in $DIR"
 fi
 
 
