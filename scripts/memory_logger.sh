@@ -3,18 +3,19 @@
 DIR=$HOME/projects/bash_course/files/performance
 
 if [ -d "$DIR" ]; then
-  echo "$DIR exists "
+  echo "$DIR exists"
 else
         echo "$DIR Does not exists"
         echo "Creating directory now"
-        mkdir $DIR
+        mkdir $DIR && touch $DIR/memory.log
         echo "performance directory created in $DIR"
+        
 fi
 
+echo "Appending to memory.log"
+ps >> $DIR/memory.log
 
-# If statement
-    #CHeck $HOME/nicho/projects/bash_course/files/performance exists 
-    # If not create
-    # Echo if exists
+
+# $DIR/memory.log to check log
 
 # Append output of free command to $HOME/performance/memory.log use <ps> cmd
