@@ -12,6 +12,4 @@ esac
 
 break
 done
-# setup case statement within select statment
-    # echo out each name
-    #A|B) commands ; for cities in same country
+
