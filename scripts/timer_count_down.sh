@@ -1,20 +1,27 @@
 #!/bin/bash
 
 
-#Step 1: You need to add getopts into your script to provide two options to your user.
-#-m option minutes and a -s option 
+
 while getopts "m:s:" opt; do
-    case "$opt" in
-        m) ;;
-        s) ;;
+case "$opt" in
+        m) min_in_sec=$(($OPTARG * 60))
+            echo $min_in_sec
+        ;;
+        s) sec=$OPTARG
+             
+        ;;
+        \?) echo "$opt" ;;
     esac
 
-#use arithmetic expansion to calculate the total number of seconds, and save this value into a variable called total_seconds
+    total_sec=$(($min_in_sec+1))
+    
 
-#Step 2: You then need to create a while loop that prints out the total number of seconds remaining, once per second, until there are no seconds left.
-#use sleep 1s
-
-
-
+    if [ $total_sec -gt 0 ]; then
+        while [ $total_sec -gt 0 ]; do
+            echo $total_sec
+            total_sec=$((total_sec - 1))
+            # sleep 1s
+        done
+    fi
 done
 echo "Times Up!"
